@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  background-color: #75dbf0;
+}
+
+.container {
+  border: 3px solid #020202e0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ade8f4;
+  box-shadow: -20px 20px 2px black;
+}
+
+.container-centered {
+  margin: auto;
+  max-width: 50%;
+  margin-top: 2rem;
+}
+
+.description {
+  text-align: initial;
+  padding: 0 1rem;
+}
+
+div {
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1ch;
+}
+input {
+  border: 2px solid black;
+}
+
+button {
+  font-size: large;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 3px solid black;
+  box-shadow: -2px 4px black;
+  cursor: pointer;
+  background: transparent;
+}
+
+button:hover {
+  background-color: #f1faee;
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding: 0 0.2rem;
+  }
+  .container-centered {
+    max-width: 80%;
+  }
+  .description {
+    font-size: small;
+    padding: 0 0.5rem;
+  }
+  div {
+    max-width: 80%;
+  }
+  h3 {
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  .container-centered {
+    max-width: 50%;
+  }
+  .description {
+    font-size: medium;
+    padding: 0 0.5rem;
+  }
+  div {
+    max-width: 60%;
+  }
+  h3 {
+    font-size: large;
+  }
+}
